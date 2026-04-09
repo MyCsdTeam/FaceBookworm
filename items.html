@@ -26,226 +26,123 @@
     </header>
 
     <main>
-        <section class="search-section">
-            <div class="search-container">
-                <h2>Βρες το επόμενο βιβλίο σου</h2>
-                <form class="search-bar" action="#" method="GET">
-                    <input type="text" placeholder="Αναζήτηση με τίτλο, συγγραφέα ή κατηγορία..." name="search">
-                    <button type="submit" class="search-btn">Αναζήτηση</button>
-                </form>
+        <section class="search-filter-section">
+            <input type="text" class="search-bar" placeholder="Αναζήτηση τίτλου, συγγραφέα...">
+            
+            <div class="category-filters">
+                <button type="button" class="category-btn active">Όλα τα Βιβλία</button>
+                <button type="button" class="category-btn">Ρομάντζο</button>
+                <button type="button" class="category-btn">Φαντασία / Sci-Fi</button>
+                <button type="button" class="category-btn">Κλασικά</button>
+                <button type="button" class="category-btn">Θρίλερ / Μυστήριο</button>
+                <button type="button" class="category-btn">Ελληνική Λογοτεχνία</button>
             </div>
         </section>
 
-        <section class="all-items-section">
-            
-            <div class="category-filters">
-                <button class="filter-btn active" data-filter="all">Όλα τα Βιβλία</button>
-                <button class="filter-btn" data-filter="romance">Ρομάντζο</button>
-                <button class="filter-btn" data-filter="fantasy">Φαντασία / Sci-Fi</button>
-                <button class="filter-btn" data-filter="classic">Κλασικά</button>
-                <button class="filter-btn" data-filter="thriller">Θρίλερ / Μυστήριο</button>
-                <button class="filter-btn" data-filter="greek">Ελληνική Λογοτεχνία</button>
-            </div>
-
+        <section class="items-section">
             <div class="cards-grid">
                 
-                <div class="book-card" data-category="fantasy">
-                    <img src="images/tlotr.jpg" alt="Ο Άρχοντας των Δαχτυλιδιών">
+                <div class="book-card">
+                    <img src="images/tlotr.jpg" alt="Εξώφυλλο Βιβλίου">
                     <h3>Ο Άρχοντας των Δαχτυλιδιών</h3>
-                    <div class="metadata">Συγγραφέας: J.R.R. Tolkien<br>Κατηγορία: Φαντασία</div>
+                    <div class="metadata">J.R.R. Tolkien | Φαντασία</div>
+                    <p class="description">Το επικό ταξίδι του Φρόντο για την καταστροφή του Ενός Δαχτυλιδιού.</p>
                     <div class="card-footer">
-                        <span class="likes">❤️ 125</span>
-                        <button class="like-btn">👍 Like</button>
+                        <div class="action-buttons">
+                            <button type="button" class="review-btn">💬 Κριτικές</button>
+                            <button type="button" class="like-btn">❤️ 125</button>
+                        </div>
                     </div>
                 </div>
 
-                <div class="book-card" data-category="romance">
-                    <img src="images/after.jpg" alt="AFTER-ΜΕΤΑ">
+                <div class="book-card">
+                    <img src="images/after.jpg" alt="Εξώφυλλο Βιβλίου">
                     <h3>AFTER-ΜΕΤΑ</h3>
-                    <div class="metadata">Συγγραφέας: Anna Todd<br>Κατηγορία: Ρομάντζο</div>
+                    <div class="metadata">Anna Todd | Ρομάντζο</div>
+                    <p class="description">Μια παθιασμένη και θυελλώδης ιστορία αγάπης που καθήλωσε εκατομμύρια.</p>
                     <div class="card-footer">
-                        <span class="likes">❤️ 98</span>
-                        <button class="like-btn">👍 Like</button>
+                        <div class="action-buttons">
+                            <button type="button" class="review-btn">💬 Κριτικές</button>
+                            <button type="button" class="like-btn">❤️ 98</button>
+                        </div>
                     </div>
                 </div>
 
-                <div class="book-card" data-category="classic">
-                    <img src="images/pap.jpg" alt="Περηφάνεια και Προκατάληψη">
+                <div class="book-card">
+                    <img src="images/pap.jpg" alt="Εξώφυλλο Βιβλίου">
                     <h3>Περηφάνεια και Προκατάληψη</h3>
-                    <div class="metadata">Συγγραφέας: Jane Austen<br>Κατηγορία: Κλασικό</div>
+                    <div class="metadata">Jane Austen | Κλασικό</div>
+                    <p class="description">Ο κλασικός έρωτας του κύριου Ντάρσι και της Ελίζαμπεθ Μπένετ.</p>
                     <div class="card-footer">
-                        <span class="likes">❤️ 85</span>
-                        <button class="like-btn">👍 Like</button>
+                        <div class="action-buttons">
+                            <button type="button" class="review-btn">💬 Κριτικές</button>
+                            <button type="button" class="like-btn">❤️ 85</button>
+                        </div>
                     </div>
                 </div>
 
-                <div class="book-card" data-category="thriller">
-                    <img src="images/silpat.jpg" alt="The Silent Patient">
+                <div class="book-card">
+                    <img src="images/silpat.jpg" alt="Εξώφυλλο Βιβλίου">
                     <h3>The Silent Patient</h3>
-                    <div class="metadata">Συγγραφέας: Alex Michaelides<br>Κατηγορία: Θρίλερ</div>
+                    <div class="metadata">Alex Michaelides | Ψυχολογικό Θρίλερ</div>
+                    <p class="description">Μια διάσημη ζωγράφος δολοφονεί τον άντρα της και δεν ξαναμιλάει ποτέ.</p>
                     <div class="card-footer">
-                        <span class="likes">❤️ 72</span>
-                        <button class="like-btn">👍 Like</button>
+                        <div class="action-buttons">
+                            <button type="button" class="review-btn">💬 Κριτικές</button>
+                            <button type="button" class="like-btn">❤️ 72</button>
+                        </div>
                     </div>
                 </div>
 
-                <div class="book-card" data-category="fantasy">
-                    <img src="images/hp.jpg" alt="Ο Χάρι Πότερ">
-                    <h3>Ο Χάρι Πότερ (Βιβλίο 5)</h3>
-                    <div class="metadata">Συγγραφέας: J.K. Rowling<br>Κατηγορία: Φαντασία</div>
+                <div class="book-card">
+                    <img src="images/hp.jpg" alt="Εξώφυλλο Βιβλίου">
+                    <h3>Ο Χάρι Πότερ και το Τάγμα του Φοίνικα</h3>
+                    <div class="metadata">J.K. Rowling | Φαντασία</div>
+                    <p class="description">Ο Χάρι Πότερ επιστρέφει στο Χόγκουαρτς και αντιμετωπίζει νέους κινδύνους.</p>
                     <div class="card-footer">
-                        <span class="likes">❤️ 60</span>
-                        <button class="like-btn">👍 Like</button>
+                        <div class="action-buttons">
+                            <button type="button" class="review-btn">💬 Κριτικές</button>
+                            <button type="button" class="like-btn">❤️ 60</button>
+                        </div>
                     </div>
                 </div>
 
-                <div class="book-card" data-category="classic">
-                    <img src="images/book6.jpg" alt="1984">
-                    <h3>1984</h3>
-                    <div class="metadata">Συγγραφέας: George Orwell<br>Κατηγορία: Δυστοπία</div>
-                    <div class="card-footer">
-                        <span class="likes">❤️ 110</span>
-                        <button class="like-btn">👍 Like</button>
-                    </div>
-                </div>
-
-                <div class="book-card" data-category="classic">
-                    <img src="images/book7.jpg" alt="Ο Αλχημιστής">
-                    <h3>Ο Αλχημιστής</h3>
-                    <div class="metadata">Συγγραφέας: Paulo Coelho<br>Κατηγορία: Φιλοσοφικό</div>
-                    <div class="card-footer">
-                        <span class="likes">❤️ 95</span>
-                        <button class="like-btn">👍 Like</button>
-                    </div>
-                </div>
-
-                <div class="book-card" data-category="classic">
-                    <img src="images/book8.jpg" alt="Έγκλημα και Τιμωρία">
-                    <h3>Έγκλημα και Τιμωρία</h3>
-                    <div class="metadata">Συγγραφέας: Φ. Ντοστογιέφσκι<br>Κατηγορία: Κλασικό</div>
-                    <div class="card-footer">
-                        <span class="likes">❤️ 88</span>
-                        <button class="like-btn">👍 Like</button>
-                    </div>
-                </div>
-
-                <div class="book-card" data-category="classic">
-                    <img src="images/book9.jpg" alt="Ο Μικρός Πρίγκιπας">
-                    <h3>Ο Μικρός Πρίγκιπας</h3>
-                    <div class="metadata">Συγγραφέας: A. de Saint-Exupéry<br>Κατηγορία: Παιδικό / Φιλοσοφικό</div>
-                    <div class="card-footer">
-                        <span class="likes">❤️ 150</span>
-                        <button class="like-btn">👍 Like</button>
-                    </div>
-                </div>
-
-                <div class="book-card" data-category="thriller">
-                    <img src="images/book10.jpg" alt="Το Αυτό">
-                    <h3>Το Αυτό (IT)</h3>
-                    <div class="metadata">Συγγραφέας: Stephen King<br>Κατηγορία: Τρόμου</div>
-                    <div class="card-footer">
-                        <span class="likes">❤️ 65</span>
-                        <button class="like-btn">👍 Like</button>
-                    </div>
-                </div>
-
-                <div class="book-card" data-category="fantasy">
-                    <img src="images/book11.jpg" alt="Dune">
+                <div class="book-card">
+                    <img src="images/dune.jpg" alt="Εξώφυλλο Βιβλίου">
                     <h3>Dune</h3>
-                    <div class="metadata">Συγγραφέας: Frank Herbert<br>Κατηγορία: Sci-Fi</div>
+                    <div class="metadata">Frank Herbert | Sci-Fi</div>
+                    <p class="description">Έπος επιστημονικής φαντασίας στον ερημικό πλανήτη Αρράκις.</p>
                     <div class="card-footer">
-                        <span class="likes">❤️ 105</span>
-                        <button class="like-btn">👍 Like</button>
+                        <div class="action-buttons">
+                            <button type="button" class="review-btn">💬 Κριτικές</button>
+                            <button type="button" class="like-btn">❤️ 112</button>
+                        </div>
                     </div>
                 </div>
 
-                <div class="book-card" data-category="classic">
-                    <img src="images/book12.jpg" alt="Ο Ξένος">
-                    <h3>Ο Ξένος</h3>
-                    <div class="metadata">Συγγραφέας: Albert Camus<br>Κατηγορία: Φιλοσοφικό</div>
+                <div class="book-card">
+                    <img src="images/1984.jpg" alt="Εξώφυλλο Βιβλίου">
+                    <h3>1984</h3>
+                    <div class="metadata">George Orwell | Δυστοπία</div>
+                    <p class="description">Ο Μεγάλος Αδελφός σε παρακολουθεί σε μια σκοτεινή δυστοπική κοινωνία.</p>
                     <div class="card-footer">
-                        <span class="likes">❤️ 40</span>
-                        <button class="like-btn">👍 Like</button>
+                        <div class="action-buttons">
+                            <button type="button" class="review-btn">💬 Κριτικές</button>
+                            <button type="button" class="like-btn">❤️ 140</button>
+                        </div>
                     </div>
                 </div>
 
-                <div class="book-card" data-category="classic">
-                    <img src="images/book13.jpg" alt="Φάρμα των Ζώων">
-                    <h3>Η Φάρμα των Ζώων</h3>
-                    <div class="metadata">Συγγραφέας: George Orwell<br>Κατηγορία: Αλληγορία</div>
-                    <div class="card-footer">
-                        <span class="likes">❤️ 77</span>
-                        <button class="like-btn">👍 Like</button>
-                    </div>
-                </div>
-
-                <div class="book-card" data-category="romance">
-                    <img src="images/book14.jpg" alt="Το Νησί">
-                    <h3>Το Νησί</h3>
-                    <div class="metadata">Συγγραφέας: Victoria Hislop<br>Κατηγορία: Ιστορικό</div>
-                    <div class="card-footer">
-                        <span class="likes">❤️ 82</span>
-                        <button class="like-btn">👍 Like</button>
-                    </div>
-                </div>
-
-                <div class="book-card" data-category="classic">
-                    <img src="images/book15.jpg" alt="Το Πορτρέτο του Ντόριαν Γκρέι">
-                    <h3>Το Πορτρέτο του Ντόριαν Γκρέι</h3>
-                    <div class="metadata">Συγγραφέας: Oscar Wilde<br>Κατηγορία: Κλασικό</div>
-                    <div class="card-footer">
-                        <span class="likes">❤️ 91</span>
-                        <button class="like-btn">👍 Like</button>
-                    </div>
-                </div>
-
-                <div class="book-card" data-category="classic">
-                    <img src="images/book16.jpg" alt="Οι Άθλιοι">
-                    <h3>Οι Άθλιοι</h3>
-                    <div class="metadata">Συγγραφέας: Victor Hugo<br>Κατηγορία: Κλασικό</div>
-                    <div class="card-footer">
-                        <span class="likes">❤️ 115</span>
-                        <button class="like-btn">👍 Like</button>
-                    </div>
-                </div>
-
-                <div class="book-card" data-category="classic">
-                    <img src="images/book17.jpg" alt="Ο Υπέροχος Γκάτσμπυ">
-                    <h3>Ο Υπέροχος Γκάτσμπυ</h3>
-                    <div class="metadata">Συγγραφέας: F. Scott Fitzgerald<br>Κατηγορία: Κλασικό</div>
-                    <div class="card-footer">
-                        <span class="likes">❤️ 68</span>
-                        <button class="like-btn">👍 Like</button>
-                    </div>
-                </div>
-
-                <div class="book-card" data-category="greek">
-                    <img src="images/book18.jpg" alt="Η Φόνισσα">
+                <div class="book-card">
+                    <img src="images/fonissa.jpg" alt="Εξώφυλλο Βιβλίου">
                     <h3>Η Φόνισσα</h3>
-                    <div class="metadata">Συγγραφέας: Α. Παπαδιαμάντης<br>Κατηγορία: Ελληνική Λογοτεχνία</div>
+                    <div class="metadata">Α. Παπαδιαμάντης | Ελληνική Λογοτεχνία</div>
+                    <p class="description">Η ψυχογραφία της Φραγκογιαννούς και η σκληρή ζωή των γυναικών.</p>
                     <div class="card-footer">
-                        <span class="likes">❤️ 55</span>
-                        <button class="like-btn">👍 Like</button>
-                    </div>
-                </div>
-
-                <div class="book-card" data-category="thriller">
-                    <img src="images/book19.jpg" alt="Ο Κώδικας Da Vinci">
-                    <h3>Ο Κώδικας Da Vinci</h3>
-                    <div class="metadata">Συγγραφέας: Dan Brown<br>Κατηγορία: Μυστήριο</div>
-                    <div class="card-footer">
-                        <span class="likes">❤️ 130</span>
-                        <button class="like-btn">👍 Like</button>
-                    </div>
-                </div>
-
-                <div class="book-card" data-category="greek">
-                    <img src="images/book20.jpg" alt="Ένα Παιδί Μετράει τ' Άστρα">
-                    <h3>Ένα Παιδί Μετράει τ' Άστρα</h3>
-                    <div class="metadata">Συγγραφέας: Μενέλαος Λουντέμης<br>Κατηγορία: Ελληνική Λογοτεχνία</div>
-                    <div class="card-footer">
-                        <span class="likes">❤️ 89</span>
-                        <button class="like-btn">👍 Like</button>
+                        <div class="action-buttons">
+                            <button type="button" class="review-btn">💬 Κριτικές</button>
+                            <button type="button" class="like-btn">❤️ 65</button>
+                        </div>
                     </div>
                 </div>
 
@@ -257,30 +154,5 @@
         <p>FaceBookworm © 2026 | Ομάδα: [Τσιμερίκας Αλέξιος], [Νικολάου Μιχαήλ], [Βίτκου Μαρία]</p>
     </footer>
 
-    <script>
-        const filterBtns = document.querySelectorAll('.filter-btn');
-        const bookCards = document.querySelectorAll('.book-card');
-
-        filterBtns.forEach(btn => {
-            btn.addEventListener('click', () => {
-                
-                // 1. Αφαιρούμε το 'active' από όλα τα κουμπιά και το βάζουμε στο πατημένο
-                filterBtns.forEach(b => b.classList.remove('active'));
-                btn.classList.add('active');
-
-                // 2. Παίρνουμε την κατηγορία του κουμπιού
-                const filterValue = btn.getAttribute('data-filter');
-
-                // 3. Ελέγχουμε κάθε κάρτα
-                bookCards.forEach(card => {
-                    if (filterValue === 'all' || card.getAttribute('data-category') === filterValue) {
-                        card.style.display = 'block'; // Δείξε το
-                    } else {
-                        card.style.display = 'none'; // Κρύψε το
-                    }
-                });
-            });
-        });
-    </script>
 </body>
 </html>
