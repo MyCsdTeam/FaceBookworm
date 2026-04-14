@@ -1,0 +1,763 @@
+[{
+  "_id": {
+    "$oid": "69de068bcc46c35de6c67454"
+  },
+  "name": "Ο Άρχοντας των Δαχτυλιδιών",
+  "author": "J.R.R. Tolkien",
+  "category": "Φαντασία",
+  "price": 25.5,
+  "likes": 120,
+  "image": "https://via.placeholder.com/150",
+  "description": "Ένα επικό ταξίδι στη Μέση Γη για την καταστροφή του Ενός Δαχτυλιδιού.",
+  "reviews": [
+    {
+      "user": "Γιώργος",
+      "rating": 5,
+      "comment": "Απόλυτο αριστούργημα!"
+    },
+    {
+      "user": "Μαρία",
+      "rating": 4,
+      "comment": "Λίγο μεγάλο, αλλά αξίζει."
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "69de068bcc46c35de6c67455"
+  },
+  "name": "Ο Χάρι Πότερ και η Φιλοσοφική Λίθος",
+  "author": "J.K. Rowling",
+  "category": "Φαντασία",
+  "price": 15.99,
+  "likes": 340,
+  "image": "https://via.placeholder.com/150",
+  "description": "Η αρχή των περιπετειών του νεαρού μάγου.",
+  "reviews": [
+    {
+      "user": "Ελένη",
+      "rating": 5,
+      "comment": "Μαγικό!"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "69de068bcc46c35de6c67456"
+  },
+  "name": "Το Τραγούδι της Φωτιάς και του Πάγου",
+  "author": "George R.R. Martin",
+  "category": "Φαντασία",
+  "price": 22,
+  "likes": 210,
+  "image": "https://via.placeholder.com/150",
+  "description": "Πολιτικές ίντριγκες και δράκοι στο Γουέστερος.",
+  "reviews": []
+},
+{
+  "_id": {
+    "$oid": "69de068bcc46c35de6c67457"
+  },
+  "name": "Το Όνομα του Ανέμου",
+  "author": "Patrick Rothfuss",
+  "category": "Φαντασία",
+  "price": 18.5,
+  "likes": 95,
+  "image": "https://via.placeholder.com/150",
+  "description": "Η αυτοβιογραφία του μεγαλύτερου μάγου της εποχής του.",
+  "reviews": [
+    {
+      "user": "Νίκος",
+      "rating": 5,
+      "comment": "Περιμένω το 3ο βιβλίο!"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "69de068bcc46c35de6c67458"
+  },
+  "name": "Ο Μάγος της Γαιοθάλασσας",
+  "author": "Ursula K. Le Guin",
+  "category": "Φαντασία",
+  "price": 14.2,
+  "likes": 78,
+  "image": "https://via.placeholder.com/150",
+  "description": "Κλασική φαντασία για την ισορροπία του κόσμου.",
+  "reviews": []
+},
+{
+  "_id": {
+    "$oid": "69de068bcc46c35de6c67459"
+  },
+  "name": "Ο Τροχός του Χρόνου",
+  "author": "Robert Jordan",
+  "category": "Φαντασία",
+  "price": 24,
+  "likes": 150,
+  "image": "https://via.placeholder.com/150",
+  "description": "Η μάχη του Καλού ενάντια στο Σκοτάδι.",
+  "reviews": []
+},
+{
+  "_id": {
+    "$oid": "69de068bcc46c35de6c6745a"
+  },
+  "name": "Το Χρώμα της Μαγείας",
+  "author": "Terry Pratchett",
+  "category": "Φαντασία",
+  "price": 12.99,
+  "likes": 300,
+  "image": "https://via.placeholder.com/150",
+  "description": "Κωμική φαντασία στον Δισκόκοσμο.",
+  "reviews": [
+    {
+      "user": "Κώστας",
+      "rating": 5,
+      "comment": "Απίστευτο χιούμορ."
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "69de068bcc46c35de6c6745b"
+  },
+  "name": "Αμερικανοί Θεοί",
+  "author": "Neil Gaiman",
+  "category": "Φαντασία",
+  "price": 17.8,
+  "likes": 112,
+  "image": "https://via.placeholder.com/150",
+  "description": "Παλιοί θεοί εναντίον νέων στην σύγχρονη Αμερική.",
+  "reviews": []
+},
+{
+  "_id": {
+    "$oid": "69de068bcc46c35de6c6745c"
+  },
+  "name": "Ο Λαβύρινθος του Πάνα",
+  "author": "Guillermo del Toro",
+  "category": "Φαντασία",
+  "price": 16.5,
+  "likes": 88,
+  "image": "https://via.placeholder.com/150",
+  "description": "Σκοτεινό παραμύθι στην μεταπολεμική Ισπανία.",
+  "reviews": []
+},
+{
+  "_id": {
+    "$oid": "69de068bcc46c35de6c6745d"
+  },
+  "name": "Περηφάνια και Προκατάληψη",
+  "author": "Jane Austen",
+  "category": "Κλασικά",
+  "price": 10.5,
+  "likes": 420,
+  "image": "https://via.placeholder.com/150",
+  "description": "Η κλασική ιστορία αγάπης της Ελίζαμπεθ και του κύριου Ντάρσι.",
+  "reviews": [
+    {
+      "user": "Άννα",
+      "rating": 5,
+      "comment": "Το αγαπημένο μου!"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "69de068bcc46c35de6c6745e"
+  },
+  "name": "1984",
+  "author": "George Orwell",
+  "category": "Κλασικά",
+  "price": 11,
+  "likes": 550,
+  "image": "https://via.placeholder.com/150",
+  "description": "Δυστοπικό μυθιστόρημα για τον ολοκληρωτισμό.",
+  "reviews": [
+    {
+      "user": "Πέτρος",
+      "rating": 5,
+      "comment": "Προφητικό."
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "69de068bcc46c35de6c6745f"
+  },
+  "name": "Έγκλημα και Τιμωρία",
+  "author": "Fyodor Dostoevsky",
+  "category": "Κλασικά",
+  "price": 14,
+  "likes": 310,
+  "image": "https://via.placeholder.com/150",
+  "description": "Η ψυχολογική ανάλυση ενός εγκλήματος.",
+  "reviews": []
+},
+{
+  "_id": {
+    "$oid": "69de068bcc46c35de6c67460"
+  },
+  "name": "Ο Ξένος",
+  "author": "Albert Camus",
+  "category": "Κλασικά",
+  "price": 9.9,
+  "likes": 200,
+  "image": "https://via.placeholder.com/150",
+  "description": "Ο παραλογισμός της ανθρώπινης ύπαρξης.",
+  "reviews": []
+},
+{
+  "_id": {
+    "$oid": "69de068bcc46c35de6c67461"
+  },
+  "name": "Ο Υπέροχος Γκάτσμπυ",
+  "author": "F. Scott Fitzgerald",
+  "category": "Κλασικά",
+  "price": 12.5,
+  "likes": 180,
+  "image": "https://via.placeholder.com/150",
+  "description": "Η τζαζ εποχή και το αμερικανικό όνειρο.",
+  "reviews": []
+},
+{
+  "_id": {
+    "$oid": "69de068bcc46c35de6c67462"
+  },
+  "name": "Άννα Καρένινα",
+  "author": "Leo Tolstoy",
+  "category": "Κλασικά",
+  "price": 16,
+  "likes": 250,
+  "image": "https://via.placeholder.com/150",
+  "description": "Ένας τραγικός έρωτας στη Ρωσική αριστοκρατία.",
+  "reviews": [
+    {
+      "user": "Σοφία",
+      "rating": 4,
+      "comment": "Πολύ συναίσθημα."
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "69de068bcc46c35de6c67463"
+  },
+  "name": "Τα Ανεμοδαρμένα Ύψη",
+  "author": "Emily Brontë",
+  "category": "Κλασικά",
+  "price": 11.5,
+  "likes": 175,
+  "image": "https://via.placeholder.com/150",
+  "description": "Το άγριο πάθος του Χίθκλιφ και της Κάθριν.",
+  "reviews": []
+},
+{
+  "_id": {
+    "$oid": "69de068bcc46c35de6c67464"
+  },
+  "name": "Το Πορτρέτο του Ντόριαν Γκρέι",
+  "author": "Oscar Wilde",
+  "category": "Κλασικά",
+  "price": 10,
+  "likes": 290,
+  "image": "https://via.placeholder.com/150",
+  "description": "Το τίμημα της αιώνιας νεότητας.",
+  "reviews": []
+},
+{
+  "_id": {
+    "$oid": "69de068bcc46c35de6c67465"
+  },
+  "name": "Το Αυτό (It)",
+  "author": "Stephen King",
+  "category": "Θρίλερ",
+  "price": 19.9,
+  "likes": 320,
+  "image": "https://via.placeholder.com/150",
+  "description": "Ένας κλόουν τρομοκρατεί το Ντέρι.",
+  "reviews": [
+    {
+      "user": "Δημήτρης",
+      "rating": 5,
+      "comment": "Ανατριχιαστικό."
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "69de068bcc46c35de6c67466"
+  },
+  "name": "Η Λάμψη",
+  "author": "Stephen King",
+  "category": "Θρίλερ",
+  "price": 15,
+  "likes": 280,
+  "image": "https://via.placeholder.com/150",
+  "description": "Απομόνωση και παράνοια σε ένα απομακρυσμένο ξενοδοχείο.",
+  "reviews": []
+},
+{
+  "_id": {
+    "$oid": "69de068bcc46c35de6c67467"
+  },
+  "name": "Ο Χιονάνθρωπος",
+  "author": "Jo Nesbo",
+  "category": "Θρίλερ",
+  "price": 16.5,
+  "likes": 210,
+  "image": "https://via.placeholder.com/150",
+  "description": "Ο ντετέκτιβ Χάρι Χόλε κυνηγά έναν serial killer.",
+  "reviews": [
+    {
+      "user": "Κατερίνα",
+      "rating": 4,
+      "comment": "Τρομερή πλοκή."
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "69de068bcc46c35de6c67468"
+  },
+  "name": "Το Κορίτσι που Εξαφανίστηκε",
+  "author": "Gillian Flynn",
+  "category": "Θρίλερ",
+  "price": 14.8,
+  "likes": 195,
+  "image": "https://via.placeholder.com/150",
+  "description": "Ένας γάμος γεμάτος σκοτεινά μυστικά.",
+  "reviews": []
+},
+{
+  "_id": {
+    "$oid": "69de068bcc46c35de6c67469"
+  },
+  "name": "Η Σιωπή των Αμνών",
+  "author": "Thomas Harris",
+  "category": "Θρίλερ",
+  "price": 13.5,
+  "likes": 350,
+  "image": "https://via.placeholder.com/150",
+  "description": "Η πράκτορας Στάρλινγκ ζητά τη βοήθεια του Χάνιμπαλ Λέκτερ.",
+  "reviews": []
+},
+{
+  "_id": {
+    "$oid": "69de068bcc46c35de6c6746a"
+  },
+  "name": "Η Ψυχίατρος",
+  "author": "Wulf Dorn",
+  "category": "Θρίλερ",
+  "price": 12.9,
+  "likes": 110,
+  "image": "https://via.placeholder.com/150",
+  "description": "Ένα ψυχολογικό θρίλερ με συνεχείς ανατροπές.",
+  "reviews": []
+},
+{
+  "_id": {
+    "$oid": "69de068bcc46c35de6c6746b"
+  },
+  "name": "Το Κάλεσμα του Κθούλου",
+  "author": "H.P. Lovecraft",
+  "category": "Θρίλερ",
+  "price": 10,
+  "likes": 185,
+  "image": "https://via.placeholder.com/150",
+  "description": "Κοσμικός τρόμος από τα βάθη του ωκεανού.",
+  "reviews": [
+    {
+      "user": "Σπύρος",
+      "rating": 5,
+      "comment": "Κλασικό έργο τρόμου."
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "69de068bcc46c35de6c6746c"
+  },
+  "name": "Ψυχώ",
+  "author": "Robert Bloch",
+  "category": "Θρίλερ",
+  "price": 11.2,
+  "likes": 140,
+  "image": "https://via.placeholder.com/150",
+  "description": "Ο Νόρμαν Μπέιτς και το μοτέλ του.",
+  "reviews": []
+},
+{
+  "_id": {
+    "$oid": "69de068bcc46c35de6c6746d"
+  },
+  "name": "Και δεν έμεινε κανένας",
+  "author": "Agatha Christie",
+  "category": "Μυστήριο",
+  "price": 12,
+  "likes": 400,
+  "image": "https://via.placeholder.com/150",
+  "description": "Δέκα άγνωστοι παγιδευμένοι σε ένα νησί.",
+  "reviews": [
+    {
+      "user": "Αλίκη",
+      "rating": 5,
+      "comment": "Δεν το άφηνα από τα χέρια μου."
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "69de068bcc46c35de6c6746e"
+  },
+  "name": "Έγκλημα στο Οριάν Εξπρές",
+  "author": "Agatha Christie",
+  "category": "Μυστήριο",
+  "price": 12.5,
+  "likes": 380,
+  "image": "https://via.placeholder.com/150",
+  "description": "Ο Πουαρό λύνει ένα έγκλημα εν κινήσει.",
+  "reviews": []
+},
+{
+  "_id": {
+    "$oid": "69de068bcc46c35de6c6746f"
+  },
+  "name": "Ο Κώδικας Ντα Βίντσι",
+  "author": "Dan Brown",
+  "category": "Μυστήριο",
+  "price": 16,
+  "likes": 450,
+  "image": "https://via.placeholder.com/150",
+  "description": "Κρυμμένα σύμβολα και θρησκευτικές συνωμοσίες.",
+  "reviews": [
+    {
+      "user": "Μάκης",
+      "rating": 4,
+      "comment": "Γρήγορος ρυθμός."
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "69de068bcc46c35de6c67470"
+  },
+  "name": "Το Κορίτσι με το Τατουάζ",
+  "author": "Stieg Larsson",
+  "category": "Μυστήριο",
+  "price": 15.5,
+  "likes": 320,
+  "image": "https://via.placeholder.com/150",
+  "description": "Ένας δημοσιογράφος και μια χάκερ ερευνούν μια εξαφάνιση.",
+  "reviews": []
+},
+{
+  "_id": {
+    "$oid": "69de068bcc46c35de6c67471"
+  },
+  "name": "Η Αλήθεια για την Υπόθεση Χάρι Κέμπερτ",
+  "author": "Joel Dicker",
+  "category": "Μυστήριο",
+  "price": 18,
+  "likes": 150,
+  "image": "https://via.placeholder.com/150",
+  "description": "Ένας συγγραφέας ερευνά το παρελθόν του μέντορά του.",
+  "reviews": []
+},
+{
+  "_id": {
+    "$oid": "69de068bcc46c35de6c67472"
+  },
+  "name": "Το Όνομα του Ρόδου",
+  "author": "Umberto Eco",
+  "category": "Μυστήριο",
+  "price": 17.5,
+  "likes": 220,
+  "image": "https://via.placeholder.com/150",
+  "description": "Μυστήριο σε ένα μοναστήρι του Μεσαίωνα.",
+  "reviews": [
+    {
+      "user": "Λένα",
+      "rating": 5,
+      "comment": "Απαιτητικό αλλά υπέροχο."
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "69de068bcc46c35de6c67473"
+  },
+  "name": "Οι Φόνοι της Οδού Μοργκ",
+  "author": "Edgar Allan Poe",
+  "category": "Μυστήριο",
+  "price": 8.5,
+  "likes": 130,
+  "image": "https://via.placeholder.com/150",
+  "description": "Η πρώτη σύγχρονη ιστορία μυστηρίου.",
+  "reviews": []
+},
+{
+  "_id": {
+    "$oid": "69de068bcc46c35de6c67474"
+  },
+  "name": "Η Σκιά του Ανέμου",
+  "author": "Carlos Ruiz Zafón",
+  "category": "Μυστήριο",
+  "price": 16.8,
+  "likes": 270,
+  "image": "https://via.placeholder.com/150",
+  "description": "Το Νεκροταφείο των Λησμονημένων Βιβλίων.",
+  "reviews": []
+},
+{
+  "_id": {
+    "$oid": "69de068bcc46c35de6c67475"
+  },
+  "name": "Ο Νυχτερίδας",
+  "author": "Jo Nesbo",
+  "category": "Δράσης/Αστυνομικά",
+  "price": 14,
+  "likes": 160,
+  "image": "https://via.placeholder.com/150",
+  "description": "Η πρώτη υπόθεση του Χάρι Χόλε στην Αυστραλία.",
+  "reviews": []
+},
+{
+  "_id": {
+    "$oid": "69de068bcc46c35de6c67476"
+  },
+  "name": "Η Λέσχη των Φόνων της Πέμπτης",
+  "author": "Richard Osman",
+  "category": "Δράσης/Αστυνομικά",
+  "price": 15,
+  "likes": 190,
+  "image": "https://via.placeholder.com/150",
+  "description": "Συνταξιούχοι λύνουν ανεξιχνίαστες δολοφονίες.",
+  "reviews": [
+    {
+      "user": "Χρήστος",
+      "rating": 5,
+      "comment": "Πολύ έξυπνο!"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "69de068bcc46c35de6c67477"
+  },
+  "name": "Το Μπλοκ 11",
+  "author": "Piero San Giorgio",
+  "category": "Δράσης/Αστυνομικά",
+  "price": 13.5,
+  "likes": 85,
+  "image": "https://via.placeholder.com/150",
+  "description": "Σκληρή αστυνομική δράση στις φαβέλες.",
+  "reviews": []
+},
+{
+  "_id": {
+    "$oid": "69de068bcc46c35de6c67478"
+  },
+  "name": "Ο Άνθρωπος που Έβλεπε τα Τρένα να Περνούν",
+  "author": "Georges Simenon",
+  "category": "Δράσης/Αστυνομικά",
+  "price": 11,
+  "likes": 95,
+  "image": "https://via.placeholder.com/150",
+  "description": "Η ψυχολογία ενός ανθρώπου που βγαίνει εκτός ορίων.",
+  "reviews": []
+},
+{
+  "_id": {
+    "$oid": "69de068bcc46c35de6c67479"
+  },
+  "name": "Το Λάθος",
+  "author": "Αντώνης Σαμαράκης",
+  "category": "Δράσης/Αστυνομικά",
+  "price": 10.5,
+  "likes": 300,
+  "image": "https://via.placeholder.com/150",
+  "description": "Αγωνιώδης δράση στο Σύνδικάτο.",
+  "reviews": [
+    {
+      "user": "Βασίλης",
+      "rating": 5,
+      "comment": "Κορυφαίο ελληνικό βιβλίο."
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "69de068bcc46c35de6c6747a"
+  },
+  "name": "Το Τελευταίο Σημείωμα",
+  "author": "Michael Connelly",
+  "category": "Δράσης/Αστυνομικά",
+  "price": 16,
+  "likes": 140,
+  "image": "https://via.placeholder.com/150",
+  "description": "Ο επιθεωρητής Μπος σε μια νέα περιπέτεια.",
+  "reviews": []
+},
+{
+  "_id": {
+    "$oid": "69de068bcc46c35de6c6747b"
+  },
+  "name": "Ο Κατάσκοπος που Γύρισε από το Κρύο",
+  "author": "John le Carré",
+  "category": "Δράσης/Αστυνομικά",
+  "price": 12.8,
+  "likes": 210,
+  "image": "https://via.placeholder.com/150",
+  "description": "Κλασική κατασκοπική δράση στον Ψυχρό Πόλεμο.",
+  "reviews": []
+},
+{
+  "_id": {
+    "$oid": "69de068bcc46c35de6c6747c"
+  },
+  "name": "Το Κυνήγι του Κόκκινου Οκτώβρη",
+  "author": "Tom Clancy",
+  "category": "Δράσης/Αστυνομικά",
+  "price": 14.5,
+  "likes": 230,
+  "image": "https://via.placeholder.com/150",
+  "description": "Ένα σοβιετικό υποβρύχιο αυτομολεί.",
+  "reviews": []
+},
+{
+  "_id": {
+    "$oid": "69de068bcc46c35de6c6747d"
+  },
+  "name": "Το Ημερολόγιο",
+  "author": "Nicholas Sparks",
+  "category": "Ρομάντζο",
+  "price": 12,
+  "likes": 350,
+  "image": "https://via.placeholder.com/150",
+  "description": "Η συγκινητική ιστορία του Νόα και της Άλι.",
+  "reviews": [
+    {
+      "user": "Μιχαέλα",
+      "rating": 5,
+      "comment": "Έκλαιγα με τις ώρες."
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "69de068bcc46c35de6c6747e"
+  },
+  "name": "Πριν Έρθεις Εσύ",
+  "author": "Jojo Moyes",
+  "category": "Ρομάντζο",
+  "price": 14,
+  "likes": 290,
+  "image": "https://via.placeholder.com/150",
+  "description": "Η Λουίζα και ο Γουίλ μαθαίνουν να ζουν ξανά.",
+  "reviews": []
+},
+{
+  "_id": {
+    "$oid": "69de068bcc46c35de6c6747f"
+  },
+  "name": "Η Αγάπη στα Χρόνια της Χολέρας",
+  "author": "Gabriel García Márquez",
+  "category": "Ρομάντζο",
+  "price": 15.5,
+  "likes": 240,
+  "image": "https://via.placeholder.com/150",
+  "description": "Ένας έρωτας που περίμενε μισό αιώνα.",
+  "reviews": [
+    {
+      "user": "Ηρώ",
+      "rating": 5,
+      "comment": "Μαγευτική γραφή."
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "69de068bcc46c35de6c67480"
+  },
+  "name": "Να Με Φωνάζεις Με Τ' Όνομά Σου",
+  "author": "André Aciman",
+  "category": "Ρομάντζο",
+  "price": 13,
+  "likes": 180,
+  "image": "https://via.placeholder.com/150",
+  "description": "Καλοκαιρινός έρωτας στην Ιταλία.",
+  "reviews": []
+},
+{
+  "_id": {
+    "$oid": "69de068bcc46c35de6c67481"
+  },
+  "name": "Το Λάθος Αστέρι",
+  "author": "John Green",
+  "category": "Ρομάντζο",
+  "price": 11.5,
+  "likes": 410,
+  "image": "https://via.placeholder.com/150",
+  "description": "Δύο έφηβοι συναντιούνται σε μια ομάδα υποστήριξης.",
+  "reviews": []
+},
+{
+  "_id": {
+    "$oid": "69de068bcc46c35de6c67482"
+  },
+  "name": "Ξαφνικά Φέτος το Καλοκαίρι",
+  "author": "Sarah Morgan",
+  "category": "Ρομάντζο",
+  "price": 12.9,
+  "likes": 150,
+  "image": "https://via.placeholder.com/150",
+  "description": "Ρομαντική απόδραση στη Γαλλική εξοχή.",
+  "reviews": []
+},
+{
+  "_id": {
+    "$oid": "69de068bcc46c35de6c67483"
+  },
+  "name": "Το Τελευταίο Γράμμα",
+  "author": "Rebecca Yarros",
+  "category": "Ρομάντζο",
+  "price": 14.5,
+  "likes": 170,
+  "image": "https://via.placeholder.com/150",
+  "description": "Αγάπη, απώλεια και δεύτερες ευκαιρίες.",
+  "reviews": []
+},
+{
+  "_id": {
+    "$oid": "69de068bcc46c35de6c67484"
+  },
+  "name": "Έρωτας Μετά",
+  "author": "Sylvia Day",
+  "category": "Ρομάντζο",
+  "price": 13.8,
+  "likes": 200,
+  "image": "https://via.placeholder.com/150",
+  "description": "Ένα πάθος που ξεπερνά τα όρια.",
+  "reviews": []
+},
+{
+  "_id": {
+    "$oid": "69de068bcc46c35de6c67485"
+  },
+  "name": "Ένα Βήμα Πίσω",
+  "author": "Colleen Hoover",
+  "category": "Ρομάντζο",
+  "price": 15,
+  "likes": 320,
+  "image": "https://via.placeholder.com/150",
+  "description": "Ποτέ μην σταματάς να πιστεύεις στην αγάπη.",
+  "reviews": [
+    {
+      "user": "Ιωάννα",
+      "rating": 5,
+      "comment": "Συγκλονιστικό."
+    }
+  ]
+}]
