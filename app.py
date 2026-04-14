@@ -5,7 +5,7 @@ from flask_cors import CORS
 app = Flask(__name__)
 CORS(app)
 
-app.config["MONGO_URI"] = "mongodb://localhost:27017/FaceBookWormDB"
+app.config["MONGO_URI"] = "mongodb://localhost:27017/facebookworm_db"
 mongo = PyMongo(app)
 
 @app.route('/search', methods=['GET'])
@@ -17,7 +17,7 @@ def search_products():
     else:
         query = {"$text": {"$search": search_name}}
 
-    results = mongo.db.products.find(query).sort("price", -1)
+    results = mongo.db.books.find(query).sort("price", -1)
 
     output = []
     for product in results:
@@ -31,6 +31,21 @@ def search_products():
         })
 
     return jsonify(output)
+
+
+@app.route('/like', methods=['POST'])
+def add_like():
+    
+    data = request.get_json()
+    book_id = data.get('id')
+
+    mongo.db.books.update_one(
+        {"_id": ObjectId(book_id)}, 
+        {"$inc": {"likes": 1}}      
+    )
+
+    return jsonify({"message": "Το like προστέθηκε επιτυχώς!"})    
+
 
 if __name__ == "__main__":
     app.run(host="127.0.0.1", port=5000, debug=True)
