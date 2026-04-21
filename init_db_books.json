@@ -7,7 +7,7 @@
   "category": "Φαντασία",
   "price": 25.5,
   "likes": 120,
-  "image": "https://via.placeholder.com/150",
+  "image": "https://external.webstorage.gr/mmimages/image/91/56/29/79/0144147-264x264-800x800.jpg",
   "description": "Ένα επικό ταξίδι στη Μέση Γη για την καταστροφή του Ενός Δαχτυλιδιού.",
   "reviews": [
     {
@@ -31,7 +31,7 @@
   "category": "Φαντασία",
   "price": 15.99,
   "likes": 340,
-  "image": "https://via.placeholder.com/150",
+  "image": "https://assets.psichogios.gr/media/catalog/product/9/7/9789602743485_1.jpg",
   "description": "Η αρχή των περιπετειών του νεαρού μάγου.",
   "reviews": [
     {
@@ -45,13 +45,13 @@
   "_id": {
     "$oid": "69de068bcc46c35de6c67456"
   },
-  "name": "Το Τραγούδι της Φωτιάς και του Πάγου",
-  "author": "George R.R. Martin",
-  "category": "Φαντασία",
-  "price": 22,
-  "likes": 210,
-  "image": "https://via.placeholder.com/150",
-  "description": "Πολιτικές ίντριγκες και δράκοι στο Γουέστερος.",
+  "name": "After",
+  "author": "Anna Todd",
+  "category": "Αισθηματικό",
+  "price": 18,
+  "likes": 450,
+  "image": "https://m.media-amazon.com/images/I/81gCYSA46GL._AC_UF1000,1000_QL80_.jpg",
+  "description": "Η ζωή της Τέσα πριν και μετά τη γνωριμία της με τον Χάρντιν. Ένας έρωτας γεμάτος εντάσεις και ανατροπές.",
   "reviews": []
 },
 {
@@ -63,7 +63,7 @@
   "category": "Φαντασία",
   "price": 18.5,
   "likes": 95,
-  "image": "https://via.placeholder.com/150",
+  "image": "https://anubis.gr/wp-content/uploads/2025/10/%CE%95%CE%BE%CF%8E%CF%86%CF%85%CE%BB%CE%BB%CE%BF-ONOMA-TOY-ANEMOY_2025.jpg",
   "description": "Η αυτοβιογραφία του μεγαλύτερου μάγου της εποχής του.",
   "reviews": [
     {
@@ -82,7 +82,7 @@
   "category": "Φαντασία",
   "price": 14.2,
   "likes": 78,
-  "image": "https://via.placeholder.com/150",
+  "image": "https://external.webstorage.gr/mmimages/image/95/29/86/80/2043641-MUSIC-LP-hero-560x560.jpg",
   "description": "Κλασική φαντασία για την ισορροπία του κόσμου.",
   "reviews": []
 },
@@ -95,7 +95,7 @@
   "category": "Φαντασία",
   "price": 24,
   "likes": 150,
-  "image": "https://via.placeholder.com/150",
+  "image": "https://d.scdn.gr/images/sku_main_images/000100/100550/20250108094240_o_trochos_tou_chronou_vivlio_1_o_ofthalmos_tou_kosmou_a_tomos.jpeg",
   "description": "Η μάχη του Καλού ενάντια στο Σκοτάδι.",
   "reviews": []
 },
@@ -108,7 +108,7 @@
   "category": "Φαντασία",
   "price": 12.99,
   "likes": 300,
-  "image": "https://via.placeholder.com/150",
+  "image": "https://www.protoporia.gr/repository/covers/70/70017.jpg",
   "description": "Κωμική φαντασία στον Δισκόκοσμο.",
   "reviews": [
     {
@@ -127,7 +127,7 @@
   "category": "Φαντασία",
   "price": 17.8,
   "likes": 112,
-  "image": "https://via.placeholder.com/150",
+  "image": "https://external.webstorage.gr/mmimages/image/70/95/65/17/0106192-264x264-800x800.jpg",
   "description": "Παλιοί θεοί εναντίον νέων στην σύγχρονη Αμερική.",
   "reviews": []
 },
@@ -140,7 +140,7 @@
   "category": "Φαντασία",
   "price": 16.5,
   "likes": 88,
-  "image": "https://via.placeholder.com/150",
+  "image": "https://external.webstorage.gr/mmimages/image/10/66/11/38/9786180131215-800x800.jpg",
   "description": "Σκοτεινό παραμύθι στην μεταπολεμική Ισπανία.",
   "reviews": []
 },
@@ -153,7 +153,7 @@
   "category": "Κλασικά",
   "price": 10.5,
   "likes": 420,
-  "image": "https://via.placeholder.com/150",
+  "image": "https://external.webstorage.gr/mmimages/image/72/34/81/92/9786180212471-264x264-800x800.jpg",
   "description": "Η κλασική ιστορία αγάπης της Ελίζαμπεθ και του κύριου Ντάρσι.",
   "reviews": [
     {
@@ -172,7 +172,7 @@
   "category": "Κλασικά",
   "price": 11,
   "likes": 550,
-  "image": "https://via.placeholder.com/150",
+  "image": "https://external.webstorage.gr/mmimages/image/78/87/98/42/0138631-264x264-800x800.jpg",
   "description": "Δυστοπικό μυθιστόρημα για τον ολοκληρωτισμό.",
   "reviews": [
     {
@@ -191,7 +191,7 @@
   "category": "Κλασικά",
   "price": 14,
   "likes": 310,
-  "image": "https://via.placeholder.com/150",
+  "image": "https://external.webstorage.gr/mmimages/image/37/51/84/79/9786180226744-560x560.jpg",
   "description": "Η ψυχολογική ανάλυση ενός εγκλήματος.",
   "reviews": []
 },
@@ -204,7 +204,7 @@
   "category": "Κλασικά",
   "price": 9.9,
   "likes": 200,
-  "image": "https://via.placeholder.com/150",
+  "image": "https://external.webstorage.gr/mmimages/image/39/84/92/24/0141879-264x264-800x800-96x96-560x560.jpg",
   "description": "Ο παραλογισμός της ανθρώπινης ύπαρξης.",
   "reviews": []
 },
@@ -217,7 +217,7 @@
   "category": "Κλασικά",
   "price": 12.5,
   "likes": 180,
-  "image": "https://via.placeholder.com/150",
+  "image": "https://external.webstorage.gr/mmimages/image/97/36/24/72/1169218-264x264-800x800.jpg",
   "description": "Η τζαζ εποχή και το αμερικανικό όνειρο.",
   "reviews": []
 },
@@ -230,7 +230,7 @@
   "category": "Κλασικά",
   "price": 16,
   "likes": 250,
-  "image": "https://via.placeholder.com/150",
+  "image": "https://external.webstorage.gr/mmimages/image/86/72/76/74/0551159-264x264-800x800.jpg",
   "description": "Ένας τραγικός έρωτας στη Ρωσική αριστοκρατία.",
   "reviews": [
     {
@@ -249,7 +249,7 @@
   "category": "Κλασικά",
   "price": 11.5,
   "likes": 175,
-  "image": "https://via.placeholder.com/150",
+  "image": "https://external.webstorage.gr/mmimages/image/10/39/69/23/1619443-264x264-800x800.jpg",
   "description": "Το άγριο πάθος του Χίθκλιφ και της Κάθριν.",
   "reviews": []
 },
@@ -262,7 +262,7 @@
   "category": "Κλασικά",
   "price": 10,
   "likes": 290,
-  "image": "https://via.placeholder.com/150",
+  "image": "https://external.webstorage.gr/mmimages/image/29/26/65/30/1494334-264x264-800x800-96x96-560x560.jpg",
   "description": "Το τίμημα της αιώνιας νεότητας.",
   "reviews": []
 },
@@ -275,7 +275,7 @@
   "category": "Θρίλερ",
   "price": 19.9,
   "likes": 320,
-  "image": "https://via.placeholder.com/150",
+  "image": "https://external.webstorage.gr/mmimages/image/48/29/26/41/1242043-264x264-800x800.jpg",
   "description": "Ένας κλόουν τρομοκρατεί το Ντέρι.",
   "reviews": [
     {
@@ -294,7 +294,7 @@
   "category": "Θρίλερ",
   "price": 15,
   "likes": 280,
-  "image": "https://via.placeholder.com/150",
+  "image": "https://external.webstorage.gr/mmimages/image/39/5/31/37/0146995-264x264-800x800-96x96-560x560.jpg",
   "description": "Απομόνωση και παράνοια σε ένα απομακρυσμένο ξενοδοχείο.",
   "reviews": []
 },
@@ -307,7 +307,7 @@
   "category": "Θρίλερ",
   "price": 16.5,
   "likes": 210,
-  "image": "https://via.placeholder.com/150",
+  "image": "https://external.webstorage.gr/mmimages/image/93/94/96/98/1830269-PUBLISHER-BOOK-hero-800x800.jpg",
   "description": "Ο ντετέκτιβ Χάρι Χόλε κυνηγά έναν serial killer.",
   "reviews": [
     {
@@ -326,7 +326,7 @@
   "category": "Θρίλερ",
   "price": 14.8,
   "likes": 195,
-  "image": "https://via.placeholder.com/150",
+  "image": "https://external.webstorage.gr/mmimages/image/69/29/96/39/1884821-PUBLISHER-BOOK-hero-800x800.jpg",
   "description": "Ένας γάμος γεμάτος σκοτεινά μυστικά.",
   "reviews": []
 },
@@ -339,7 +339,7 @@
   "category": "Θρίλερ",
   "price": 13.5,
   "likes": 350,
-  "image": "https://via.placeholder.com/150",
+  "image": "https://external.webstorage.gr/mmimages/image/37/64/24/78/0120243-264x264-800x800.jpg",
   "description": "Η πράκτορας Στάρλινγκ ζητά τη βοήθεια του Χάνιμπαλ Λέκτερ.",
   "reviews": []
 },
@@ -352,7 +352,7 @@
   "category": "Θρίλερ",
   "price": 12.9,
   "likes": 110,
-  "image": "https://via.placeholder.com/150",
+  "image": "https://m.media-amazon.com/images/I/61z7mkVvItL._AC_UF894,1000_QL80_.jpg",
   "description": "Ένα ψυχολογικό θρίλερ με συνεχείς ανατροπές.",
   "reviews": []
 },
@@ -365,7 +365,7 @@
   "category": "Θρίλερ",
   "price": 10,
   "likes": 185,
-  "image": "https://via.placeholder.com/150",
+  "image": "https://external.webstorage.gr/mmimages/image/54/65/6/52/9786185598174-800x800.jpg",
   "description": "Κοσμικός τρόμος από τα βάθη του ωκεανού.",
   "reviews": [
     {
@@ -384,7 +384,7 @@
   "category": "Θρίλερ",
   "price": 11.2,
   "likes": 140,
-  "image": "https://via.placeholder.com/150",
+  "image": "https://external.webstorage.gr/mmimages/image/79/23/93/53/0980885-264x264-800x800-96x96-560x560.jpg",
   "description": "Ο Νόρμαν Μπέιτς και το μοτέλ του.",
   "reviews": []
 },
@@ -397,7 +397,7 @@
   "category": "Μυστήριο",
   "price": 12,
   "likes": 400,
-  "image": "https://via.placeholder.com/150",
+  "image": "https://external.webstorage.gr/mmimages/image/8/96/42/48/2088966-PUBLISHER-BOOK-hero-560x560.jpg",
   "description": "Δέκα άγνωστοι παγιδευμένοι σε ένα νησί.",
   "reviews": [
     {
@@ -416,7 +416,7 @@
   "category": "Μυστήριο",
   "price": 12.5,
   "likes": 380,
-  "image": "https://via.placeholder.com/150",
+  "image": "https://external.webstorage.gr/mmimages/96/56/87/13/9786180128055-240x148-786x587.jpg",
   "description": "Ο Πουαρό λύνει ένα έγκλημα εν κινήσει.",
   "reviews": []
 },
@@ -429,7 +429,7 @@
   "category": "Μυστήριο",
   "price": 16,
   "likes": 450,
-  "image": "https://via.placeholder.com/150",
+  "image": "https://external.webstorage.gr/mmimages/image/48/61/78/50/0983294-PUBLISHER-BOOK-hero-800x800.jpg",
   "description": "Κρυμμένα σύμβολα και θρησκευτικές συνωμοσίες.",
   "reviews": [
     {
@@ -448,7 +448,7 @@
   "category": "Μυστήριο",
   "price": 15.5,
   "likes": 320,
-  "image": "https://via.placeholder.com/150",
+  "image": "https://external.webstorage.gr/mmimages/image/7/34/4/23/9789604535200-BRAND-BOOKS-hero-264x264-800x800-96x96-560x560.jpg",
   "description": "Ένας δημοσιογράφος και μια χάκερ ερευνούν μια εξαφάνιση.",
   "reviews": []
 },
@@ -461,7 +461,7 @@
   "category": "Μυστήριο",
   "price": 18,
   "likes": 150,
-  "image": "https://via.placeholder.com/150",
+  "image": "https://external.webstorage.gr/mmimages/image/84/7/12/35/0831826-264x264-800x800.jpg",
   "description": "Ένας συγγραφέας ερευνά το παρελθόν του μέντορά του.",
   "reviews": []
 },
@@ -474,7 +474,7 @@
   "category": "Μυστήριο",
   "price": 17.5,
   "likes": 220,
-  "image": "https://via.placeholder.com/150",
+  "image": "https://external.webstorage.gr/mmimages/image/99/30/1/13/9789604960729-264x264-800x800.jpg",
   "description": "Μυστήριο σε ένα μοναστήρι του Μεσαίωνα.",
   "reviews": [
     {
@@ -493,7 +493,7 @@
   "category": "Μυστήριο",
   "price": 8.5,
   "likes": 130,
-  "image": "https://via.placeholder.com/150",
+  "image": "https://external.webstorage.gr/mmimages/image/7/20/68/47/1133528-264x264-800x800.jpg",
   "description": "Η πρώτη σύγχρονη ιστορία μυστηρίου.",
   "reviews": []
 },
@@ -506,7 +506,7 @@
   "category": "Μυστήριο",
   "price": 16.8,
   "likes": 270,
-  "image": "https://via.placeholder.com/150",
+  "image": "https://is1-ssl.mzstatic.com/image/thumb/Publication71/v4/27/b4/50/27b4507c-7e3a-7c03-22c8-ab00bba4b6e2/9786180119381.jpg/1200x675wz.jpg",
   "description": "Το Νεκροταφείο των Λησμονημένων Βιβλίων.",
   "reviews": []
 },
@@ -519,7 +519,7 @@
   "category": "Δράσης/Αστυνομικά",
   "price": 14,
   "likes": 160,
-  "image": "https://via.placeholder.com/150",
+  "image": "https://external.webstorage.gr/mmimages/image/61/6/59/77/0810657-264x264-800x800-96x96-560x560.jpg",
   "description": "Η πρώτη υπόθεση του Χάρι Χόλε στην Αυστραλία.",
   "reviews": []
 },
@@ -532,7 +532,7 @@
   "category": "Δράσης/Αστυνομικά",
   "price": 15,
   "likes": 190,
-  "image": "https://via.placeholder.com/150",
+  "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6G93d_4M3ARD5A96prXLFi-T-Y9-qcKNY2A&s",
   "description": "Συνταξιούχοι λύνουν ανεξιχνίαστες δολοφονίες.",
   "reviews": [
     {
@@ -546,13 +546,13 @@
   "_id": {
     "$oid": "69de068bcc46c35de6c67477"
   },
-  "name": "Το Μπλοκ 11",
-  "author": "Piero San Giorgio",
-  "category": "Δράσης/Αστυνομικά",
-  "price": 13.5,
-  "likes": 85,
-  "image": "https://via.placeholder.com/150",
-  "description": "Σκληρή αστυνομική δράση στις φαβέλες.",
+  "name": "Τα αστυνομικά του Geronimo Stilton: Η σκιά του μάρτυρα",
+  "author": "Geronimo Stilton",
+  "category": "Παιδικό Αστυνομικό",
+  "price": 9.0,
+  "likes": 42,
+  "image": "https://external.webstorage.gr/mmimages/image/72/0/47/40/2076758-PUBLISHER-BOOK-hero-560x560.jpg",
+  "description": "Μια μυστηριώδης υπόθεση για τον Σερλόκκο και τον βοηθό του, τον Γερόνιμο Στίλτον, γεμάτη χιούμορ και δράση.",
   "reviews": []
 },
 {
@@ -564,7 +564,7 @@
   "category": "Δράσης/Αστυνομικά",
   "price": 11,
   "likes": 95,
-  "image": "https://via.placeholder.com/150",
+  "image": "https://external.webstorage.gr/mmimages/image/62/23/81/11/0083513-264x264-800x800.jpg",
   "description": "Η ψυχολογία ενός ανθρώπου που βγαίνει εκτός ορίων.",
   "reviews": []
 },
@@ -577,7 +577,7 @@
   "category": "Δράσης/Αστυνομικά",
   "price": 10.5,
   "likes": 300,
-  "image": "https://via.placeholder.com/150",
+  "image": "https://external.webstorage.gr/mmimages/image/1/52/88/11/0766168-264x264-800x800-96x96-560x560.jpg",
   "description": "Αγωνιώδης δράση στο Σύνδικάτο.",
   "reviews": [
     {
@@ -591,13 +591,13 @@
   "_id": {
     "$oid": "69de068bcc46c35de6c6747a"
   },
-  "name": "Το Τελευταίο Σημείωμα",
-  "author": "Michael Connelly",
-  "category": "Δράσης/Αστυνομικά",
-  "price": 16,
+  "name": "Το Νησί",
+  "author": "Ragnar Jónasson",
+  "category": "Αστυνομικό / Thriller",
+  "price": 16.0,
   "likes": 140,
-  "image": "https://via.placeholder.com/150",
-  "description": "Ο επιθεωρητής Μπος σε μια νέα περιπέτεια.",
+  "image": "https://external.webstorage.gr/mmimages/image/33/22/97/33/1629210-264x264-800x800.jpg",
+  "description": "Η επιθεωρήτρια Χούλντα Χερμανσντότιρ ερευνά έναν σκοτεινό φόνο σε ένα απομονωμένο νησί της Ισλανδίας.",
   "reviews": []
 },
 {
@@ -609,7 +609,7 @@
   "category": "Δράσης/Αστυνομικά",
   "price": 12.8,
   "likes": 210,
-  "image": "https://via.placeholder.com/150",
+  "image": "https://external.webstorage.gr/mmimages/image/25/19/37/8/9789606209086-BRAND-BOOK-hero-560x560.jpg",
   "description": "Κλασική κατασκοπική δράση στον Ψυχρό Πόλεμο.",
   "reviews": []
 },
@@ -622,7 +622,7 @@
   "category": "Δράσης/Αστυνομικά",
   "price": 14.5,
   "likes": 230,
-  "image": "https://via.placeholder.com/150",
+  "image": "https://www.filmy.gr/wp-content/uploads/2019/04/The-Hunt-for-Red-October-53.jpg",
   "description": "Ένα σοβιετικό υποβρύχιο αυτομολεί.",
   "reviews": []
 },
@@ -635,7 +635,7 @@
   "category": "Ρομάντζο",
   "price": 12,
   "likes": 350,
-  "image": "https://via.placeholder.com/150",
+  "image": "https://external.webstorage.gr/mmimages/image/61/41/71/47/1242219-264x264-800x800.jpg",
   "description": "Η συγκινητική ιστορία του Νόα και της Άλι.",
   "reviews": [
     {
@@ -654,7 +654,7 @@
   "category": "Ρομάντζο",
   "price": 14,
   "likes": 290,
-  "image": "https://via.placeholder.com/150",
+  "image": "https://external.webstorage.gr/mmimages/image/80/81/89/51/9789604969098-264x264-800x800-96x96-560x560.jpg",
   "description": "Η Λουίζα και ο Γουίλ μαθαίνουν να ζουν ξανά.",
   "reviews": []
 },
@@ -662,12 +662,12 @@
   "_id": {
     "$oid": "69de068bcc46c35de6c6747f"
   },
-  "name": "Η Αγάπη στα Χρόνια της Χολέρας",
+  "name": "Ο Έρωτας στα Χρόνια της Χολέρας",
   "author": "Gabriel García Márquez",
   "category": "Ρομάντζο",
   "price": 15.5,
   "likes": 240,
-  "image": "https://via.placeholder.com/150",
+  "image": "https://external.webstorage.gr/mmimages/image/52/62/70/2/1440244-BOOK-PUBL-hero-800x800.jpg",
   "description": "Ένας έρωτας που περίμενε μισό αιώνα.",
   "reviews": [
     {
@@ -686,7 +686,7 @@
   "category": "Ρομάντζο",
   "price": 13,
   "likes": 180,
-  "image": "https://via.placeholder.com/150",
+  "image": "https://external.webstorage.gr/mmimages/image/37/68/51/66/1310532-264x264-800x800.jpg",
   "description": "Καλοκαιρινός έρωτας στην Ιταλία.",
   "reviews": []
 },
@@ -699,7 +699,7 @@
   "category": "Ρομάντζο",
   "price": 11.5,
   "likes": 410,
-  "image": "https://via.placeholder.com/150",
+  "image": "https://external.webstorage.gr/mmimages/image/29/83/57/24/0767295-264x264-800x800-96x96-560x560.jpg",
   "description": "Δύο έφηβοι συναντιούνται σε μια ομάδα υποστήριξης.",
   "reviews": []
 },
@@ -712,7 +712,7 @@
   "category": "Ρομάντζο",
   "price": 12.9,
   "likes": 150,
-  "image": "https://via.placeholder.com/150",
+  "image": "https://external.webstorage.gr/mmimages/image/6/5/94/67/0130289-264x264-800x800.jpg",
   "description": "Ρομαντική απόδραση στη Γαλλική εξοχή.",
   "reviews": []
 },
@@ -725,7 +725,7 @@
   "category": "Ρομάντζο",
   "price": 14.5,
   "likes": 170,
-  "image": "https://via.placeholder.com/150",
+  "image": "https://external.webstorage.gr/mmimages/image/92/75/4/80/2053265-PUBLISHER-BOOK-hero-560x560.jpg",
   "description": "Αγάπη, απώλεια και δεύτερες ευκαιρίες.",
   "reviews": []
 },
@@ -733,12 +733,12 @@
   "_id": {
     "$oid": "69de068bcc46c35de6c67484"
   },
-  "name": "Έρωτας Μετά",
-  "author": "Sylvia Day",
+  "name": "Έρωτας",
+  "author": "Shaun Usher",
   "category": "Ρομάντζο",
   "price": 13.8,
   "likes": 200,
-  "image": "https://via.placeholder.com/150",
+  "image": "https://external.webstorage.gr/mmimages/image/71/97/5/55/9789604367368-BRAINFOOD-BOOK-hero-264x264-800x800-96x96-560x560.jpg",
   "description": "Ένα πάθος που ξεπερνά τα όρια.",
   "reviews": []
 },
@@ -746,13 +746,13 @@
   "_id": {
     "$oid": "69de068bcc46c35de6c67485"
   },
-  "name": "Ένα Βήμα Πίσω",
+  "name": "Μετανιώνοντας Για Σένα",
   "author": "Colleen Hoover",
   "category": "Ρομάντζο",
   "price": 15,
   "likes": 320,
-  "image": "https://via.placeholder.com/150",
-  "description": "Ποτέ μην σταματάς να πιστεύεις στην αγάπη.",
+  "image": "https://external.webstorage.gr/mmimages/image/33/37/98/6/1909169-PUBLISHER-BOOK-hero-560x560.jpg",
+  "description": "Μια τραγωδία αποκαλύπτει κρυμμένα μυστικά, δοκιμάζοντας τους δεσμούς μεταξύ μιας μητέρας και της έφηβης κόρης της.",
   "reviews": [
     {
       "user": "Ιωάννα",
