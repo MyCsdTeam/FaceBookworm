@@ -20,11 +20,18 @@ def search_products():
     # Διαβάζουμε την παράμετρο 'name' από το URL (π.χ. /search?name=Harry)
     search_name = request.args.get('name', '')
 
-    # Αν η αναζήτηση είναι κενή φέρνουμε όλα τα βιβλία, αλλιώς χρησιμοποιούμε τον Text Index
+    # Αν η αναζήτηση είναι κενή φέρνουμε όλα τα βιβλία
     if search_name == '':
         query = {}
     else:
-        query = {"$text": {"$search": search_name}}
+        # Χρησιμοποιούμε $regex για partial matching και $options: "i" για case-insensitive (αγνοεί κεφαλαία/μικρά).
+        # Βάζουμε $or για να ψάχνει είτε στον τίτλο (name) είτε στην περιγραφή (description).
+        query = {
+            "$or": [
+                {"name": {"$regex": search_name, "$options": "i"}},
+                {"description": {"$regex": search_name, "$options": "i"}}
+            ]
+        }
 
     # Αναζήτηση και ταξινόμηση με βάση την τιμή (φθίνουσα σειρά: -1)
     results = mongo.db.books.find(query).sort("price", -1)
@@ -33,7 +40,7 @@ def search_products():
     output = []
     for book in results:
         output.append({
-            "id": str(book["_id"]), # Το _id γίνεται string για να διαβάζεται από τη JavaScript
+            "id": str(book["_id"]), 
             "name": book["name"],
             "image": book["image"],
             "description": book["description"],
