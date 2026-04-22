@@ -15,6 +15,12 @@ document.addEventListener("DOMContentLoaded", () => {
         searchBtn.addEventListener("click", performSearch);
         performSearch(); // Φορτώνουμε όλα τα βιβλία με το που ανοίγει η σελίδα
     }
+
+    // --- ΚΩΔΙΚΑΣ ΓΙΑ ITEMS PAGE (Αλληλεπίδραση 2) ---
+    const searchContainer = document.getElementById("search-container");
+    if (searchContainer) {
+        searchContainer.addEventListener("click", handleLikeClick);
+    }
 });
 
 
@@ -96,4 +102,41 @@ function renderSearchBooks(books) {
         `;
         grid.innerHTML += bookCard;
     });
+}
+
+// ==========================================
+// 3. ΣΥΝΑΡΤΗΣΕΙΣ ΓΙΑ ΤΑ LIKES
+// ==========================================
+async function handleLikeClick(event) {
+    // Βρίσκουμε αν το στοιχείο που πατήθηκε είναι το κουμπί Like (ή κάτι μέσα σε αυτό, π.χ. το εικονίδιο)
+    const likeBtn = event.target.closest(".like-btn");
+    
+    if (!likeBtn) return; // Αν δεν πατήθηκε το κουμπί like, σταμάτα
+
+    // Παίρνουμε το ID του βιβλίου από το data-id attribute
+    const bookId = likeBtn.getAttribute("data-id");
+
+    try {
+        const response = await fetch("http://127.0.0.1:5000/like", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify({ id: bookId }),
+        });
+
+        if (response.ok) {
+            // Αν το Like αποθηκεύτηκε στη βάση, ενημερώνουμε το νούμερο στην οθόνη (UI)
+            const likesCountSpan = likeBtn.querySelector(".likes-count");
+            let currentLikes = parseInt(likesCountSpan.innerText);
+            likesCountSpan.innerText = currentLikes + 1;
+            
+            // Προαιρετικό: Μπορείς να αλλάξεις το χρώμα ή να προσθέσεις ένα animation
+            likeBtn.style.color = "#e74c3c"; 
+        } else {
+            console.error("Σφάλμα κατά την αποστολή του like.");
+        }
+    } catch (error) {
+        console.error("Σφάλμα σύνδεσης με τον server:", error);
+    }
 }
