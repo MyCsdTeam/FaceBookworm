@@ -50,20 +50,24 @@ def search_products():
 
     return jsonify(output)
 
-# --- ENDPOINT 2: Προσθήκη Like ---
+# --- ENDPOINT 2: Προσθήκη / Αφαίρεση Like ---
 @app.route('/like', methods=['POST'])
 def add_like():
-    # Διαβάζουμε το JSON πακέτο που στάλθηκε στο body του request
+    # Διαβάζουμε το "δέμα" (body) που μας έστειλε η JS
     data = request.get_json()
     book_id = data.get('id')
+    action = data.get('action') # Διαβάζει αν είναι 'like' ή 'unlike'
 
-    # Ενημερώνουμε το συγκεκριμένο βιβλίο αυξάνοντας τα likes κατά 1 ($inc)
+    # Διακόπτης: Αν είναι like βάζει +1, αν είναι unlike βάζει -1
+    increment = 1 if action == 'like' else -1
+
+    # Ενημερώνουμε τη βάση (το $inc πλέον παίρνει το +1 ή το -1)
     mongo.db.books.update_one(
         {"_id": ObjectId(book_id)}, 
-        {"$inc": {"likes": 1}}      
+        {"$inc": {"likes": increment}}      
     )
     
-    return jsonify({"message": "Το like προστέθηκε επιτυχώς!"})
+    return jsonify({"message": f"Η ενέργεια {action} ολοκληρώθηκε!"})
 
 # --- ENDPOINT 3: Δημοφιλή Βιβλία ---
 @app.route('/popular', methods=['GET'])
