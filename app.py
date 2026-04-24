@@ -15,28 +15,44 @@ app.config["MONGO_URI"] = "mongodb://localhost:27017/facebookworm_db"
 mongo = PyMongo(app)
 
 # --- ENDPOINT 1: Αναζήτηση Βιβλίων ---
+# --- Βοηθητική συνάρτηση για Ελληνικούς τόνους ---
+def create_accent_insensitive_regex(search_term):
+    # Χάρτης αντικατάστασης γραμμάτων με ή χωρίς τόνο
+    accents_map = {
+        'α': '[αά]', 'ά': '[αά]',
+        'ε': '[εέ]', 'έ': '[εέ]',
+        'η': '[ηή]', 'ή': '[ηή]',
+        'ι': '[ιίϊΐ]', 'ί': '[ιίϊΐ]', 'ϊ': '[ιίϊΐ]', 'ΐ': '[ιίϊΐ]',
+        'ο': '[οό]', 'ό': '[οό]',
+        'υ': '[υύϋΰ]', 'ύ': '[υύϋΰ]', 'ϋ': '[υύϋΰ]', 'ΰ': '[υύϋΰ]',
+        'ω': '[ωώ]', 'ώ': '[ωώ]'
+    }
+    pattern = ""
+    for char in search_term.lower(): # Κάνουμε τα γράμματα μικρά για να τα ταιριάξουμε στο map
+        # Αν το γράμμα υπάρχει στο map, βάζουμε το regex του, αλλιώς το αφήνουμε ως έχει
+        pattern += accents_map.get(char, char) 
+    return pattern
+
+# --- ENDPOINT 1: Αναζήτηση Βιβλίων ---
 @app.route('/search', methods=['GET'])
 def search_products():
-    # Διαβάζουμε την παράμετρο 'name' από το URL (π.χ. /search?name=Harry)
     search_name = request.args.get('name', '')
 
-    # Αν η αναζήτηση είναι κενή φέρνουμε όλα τα βιβλία
     if search_name == '':
         query = {}
     else:
-        # Χρησιμοποιούμε $regex για partial matching και $options: "i" για case-insensitive (αγνοεί κεφαλαία/μικρά).
-        # Βάζουμε $or για να ψάχνει είτε στον τίτλο (name) είτε στην περιγραφή (description).
+        # Φτιάχνουμε το έξυπνο pattern που αγνοεί τους τόνους
+        smart_regex_pattern = create_accent_insensitive_regex(search_name)
+        
         query = {
             "$or": [
-                {"name": {"$regex": search_name, "$options": "i"}},
-                {"description": {"$regex": search_name, "$options": "i"}}
+                {"name": {"$regex": smart_regex_pattern, "$options": "i"}},
+                {"description": {"$regex": smart_regex_pattern, "$options": "i"}}
             ]
         }
 
-    # Αναζήτηση και ταξινόμηση με βάση την τιμή (φθίνουσα σειρά: -1)
     results = mongo.db.books.find(query).sort("price", -1)
 
-    # Μετατρέπουμε τα αποτελέσματα της βάσης σε λίστα για να σταλούν ως JSON
     output = []
     for book in results:
         output.append({
