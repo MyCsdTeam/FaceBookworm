@@ -21,6 +21,22 @@ document.addEventListener("DOMContentLoaded", () => {
     if (searchContainer) {
         searchContainer.addEventListener("click", handleLikeClick);
     }
+    // --- ΚΩΔΙΚΑΣ ΓΙΑ ΚΑΤΗΓΟΡΙΕΣ ---
+    const categoryButtons = document.querySelectorAll(".category-btn"); 
+
+    if (categoryButtons.length > 0) {
+        categoryButtons.forEach(button => {
+            button.addEventListener("click", (event) => {
+                categoryButtons.forEach(btn => btn.classList.remove("active"));
+                
+                event.target.classList.add("active");
+                
+                const selectedCategory = event.target.getAttribute("data-category");
+                
+                fetchBooksByCategory(selectedCategory);
+            });
+        });
+    }
 });
 
 
@@ -155,5 +171,20 @@ async function handleLikeClick(event) {
         }
     } catch (error) {
         console.error("Σφάλμα σύνδεσης με τον server:", error);
+    }
+}
+
+// ==========================================
+// 5. ΣΥΝΑΡΤΗΣΗ ΓΙΑ ΦΙΛΤΡΑΡΙΣΜΑ ΚΑΤΗΓΟΡΙΑΣ
+// ==========================================
+async function fetchBooksByCategory(category) {
+    try {
+        // Στέλνουμε το αίτημα στο Python, περνώντας την κατηγορία στο URL
+        const response = await fetch(`http://127.0.0.1:5000/category?type=${category}`);
+        const books = await response.json();
+        
+        renderSearchBooks(books); 
+    } catch (error) {
+        console.error("Σφάλμα στη φόρτωση κατηγορίας:", error);
     }
 }

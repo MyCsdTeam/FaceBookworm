@@ -104,6 +104,32 @@ def get_popular():
     
     return jsonify(output)
 
+# --- ENDPOINT 4(ΔΙΚΟ ΜΑΣ): Φιλτράρισμα ανά Κατηγορία ---
+@app.route('/category', methods=['GET'])
+def get_by_category():
+    # Διαβάζουμε την κατηγορία που μας έστειλε το JS (αν δεν στείλει, θεωρούμε 'all')
+    category_type = request.args.get('type', 'all')
+
+    if category_type == 'all':
+        # Αν η κατηγορία είναι "all", τα φέρνουμε όλα
+        results = mongo.db.books.find().sort("price", -1)
+    else:
+        # Αλλιώς, ψάχνουμε στη MongoDB μόνο όσα έχουν το συγκεκριμένο πεδίο "category"
+        results = mongo.db.books.find({"category": category_type}).sort("price", -1)
+
+    output = []
+    for book in results:
+        output.append({
+            "id": str(book["_id"]), 
+            "name": book["name"],
+            "image": book["image"],
+            "description": book["description"],
+            "likes": book["likes"],
+            "price": book["price"]
+        })
+
+    return jsonify(output)
+
 # 3. Εκκίνηση του Server
 if __name__ == "__main__":
     # Τρέχει υποχρεωτικά στο localhost και στην πόρτα 5000 (απαίτηση εργασίας)

@@ -82,11 +82,22 @@ h1, h2, h3, .logo-text {
     margin-bottom: 40px;
     color: var(--primary-color);
 }
+
 .cards-grid {
     display: grid;
-    /* ΑΛΛΑΓΗ ΕΔΩ: από auto-fit έγινε auto-fill */
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 30px;
+}
+
+/* 2. Ειδικός κανόνας ΜΟΝΟ για την Αρχική σελίδα (Τα 5 βιβλία) */
+#popularBooksContainer {
+    /* Χρησιμοποιούμε auto-fit για να εμφανίζονται τα top 5 βιβλία στο κέντρο*/
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+/* 3. Ειδικός κανόνας ΜΟΝΟ για τη σελίδα Αναζήτησης/Κατηγοριών */
+#search-container {
+    /* Χρησιμοποιούμε auto-fill για να διατηρηθεί η δομή του πλέγματος όταν έχουμε πολλά βιβλία (κυρίως για search) */
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
 }
 
 .book-card {
