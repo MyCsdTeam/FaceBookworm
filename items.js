@@ -62,7 +62,7 @@ function renderPopularBooks(books) {
             <div class="book-card">
                 <img src="${book.image}" alt="Εξώφυλλο Βιβλίου">
                 <h3>${book.name}</h3>
-                <div class="likes">❤️ ${book.likes} Likes</div>
+                <div class="likes">❤️ ${book.likes} Want to Read</div>
             </div>
         `;
         container.innerHTML += bookCard;
@@ -110,7 +110,7 @@ function renderSearchBooks(books) {
                 <div class="card-footer">
                     <div class="action-buttons">
                         <button type="button" class="like-btn" data-id="${book.id}">
-                            ❤️ <span class="likes-count">${book.likes}</span>
+                            ❤️Want to Read <span class="likes-count">${book.likes}</span>
                         </button>
                     </div>
                 </div>

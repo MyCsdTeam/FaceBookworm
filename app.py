@@ -46,8 +46,7 @@ def search_products():
         
         query = {
             "$or": [
-                {"name": {"$regex": smart_regex_pattern, "$options": "i"}},
-                {"description": {"$regex": smart_regex_pattern, "$options": "i"}}
+                {"name": {"$regex": smart_regex_pattern, "$options": "i"}}
             ]
         }
 
