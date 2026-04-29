@@ -37,6 +37,34 @@ document.addEventListener("DOMContentLoaded", () => {
             });
         });
     }
+    // --- ΚΩΔΙΚΑΣ ΓΙΑ ΤΑ MODALS ΤΩΝ ΚΡΙΤΙΚΩΝ ---
+    if (searchContainer) {
+        searchContainer.addEventListener("click", (event) => {
+            // Αν πατήθηκε το κουμπί προβολής κριτικών
+            if (event.target.classList.contains("view-reviews-btn")) {
+                const bookId = event.target.getAttribute("data-id");
+                openReviewsModal(bookId);
+            }
+            // Αν πατήθηκε το κουμπί προσθήκης κριτικής (+)
+            if (event.target.classList.contains("add-review-btn")) {
+                const bookId = event.target.getAttribute("data-id");
+                openAddReviewModal(bookId);
+            }
+        });
+    }
+
+    // Κλείσιμο Modals όταν πατάμε το Χ
+    const closeReviewsModal = document.getElementById("closeReviewsModal");
+    const closeAddReviewModal = document.getElementById("closeAddReviewModal");
+    
+    if(closeReviewsModal) closeReviewsModal.addEventListener("click", () => document.getElementById("reviewsModal").style.display = "none");
+    if(closeAddReviewModal) closeAddReviewModal.addEventListener("click", () => document.getElementById("addReviewModal").style.display = "none");
+
+    // Υποβολή νέας κριτικής
+    const addReviewForm = document.getElementById("addReviewForm");
+    if(addReviewForm) {
+        addReviewForm.addEventListener("submit", submitNewReview);
+    }
 });
 
 
@@ -107,11 +135,15 @@ function renderSearchBooks(books) {
                 <h3>${book.name}</h3>
                 <div class="metadata">Τιμή: ${book.price}€</div>
                 <p class="description">${book.description}</p>
-                <div class="card-footer">
+                <div class="card-footer" style="flex-direction: column; gap: 10px;">
                     <div class="action-buttons">
                         <button type="button" class="like-btn" data-id="${book.id}">
                             ❤️Want to Read <span class="likes-count">${book.likes}</span>
                         </button>
+                    </div>
+                    <div class="action-buttons">
+                        <button type="button" class="review-btn view-reviews-btn" data-id="${book.id}">Κριτικές</button>
+                        <button type="button" class="review-btn add-review-btn" data-id="${book.id}" style="flex: 0.2; font-size: 18px; padding: 2px;">+</button>
                     </div>
                 </div>
             </div>
@@ -186,5 +218,86 @@ async function fetchBooksByCategory(category) {
         renderSearchBooks(books); 
     } catch (error) {
         console.error("Σφάλμα στη φόρτωση κατηγορίας:", error);
+    }
+}
+
+// ==========================================
+// 6. ΣΥΝΑΡΤΗΣΕΙΣ ΓΙΑ ΚΡΙΤΙΚΕΣ (MODALS & API)
+// ==========================================
+
+async function openReviewsModal(bookId) {
+    const modal = document.getElementById("reviewsModal");
+    const reviewsList = document.getElementById("reviewsList");
+    
+    // Καθαρίζουμε την παλιά λίστα και δείχνουμε ότι φορτώνει
+    reviewsList.innerHTML = "<p>Φόρτωση κριτικών...</p>";
+    modal.style.display = "block";
+
+    try {
+        const response = await fetch(`http://127.0.0.1:5000/get_reviews/${bookId}`);
+        const reviews = await response.json();
+        
+        reviewsList.innerHTML = ""; // Καθαρίζουμε το "Φόρτωση..."
+        
+        if (reviews.length === 0) {
+            reviewsList.innerHTML = "<p>Δεν υπάρχουν ακόμα κριτικές για αυτό το βιβλίο.</p>";
+            return;
+        }
+
+        reviews.forEach(review => {
+            reviewsList.innerHTML += `
+                <div class="review-item">
+                    <div class="review-header">
+                        <span class="review-user">${review.user}</span>
+                        <span class="review-rating">★ ${review.rating}/5</span>
+                    </div>
+                    <p class="review-text">${review.comment}</p>
+                </div>
+            `;
+        });
+    } catch (error) {
+        console.error("Σφάλμα:", error);
+        reviewsList.innerHTML = "<p>Υπήρξε σφάλμα κατά τη φόρτωση των κριτικών.</p>";
+    }
+}
+
+function openAddReviewModal(bookId) {
+    const modal = document.getElementById("addReviewModal");
+    // Αποθηκεύουμε το ID του βιβλίου στο κρυφό input της φόρμας
+    document.getElementById("reviewBookId").value = bookId;
+    modal.style.display = "block";
+}
+
+async function submitNewReview(event) {
+    event.preventDefault(); // Σταματάμε το κλασικό refresh της σελίδας
+    
+    const bookId = document.getElementById("reviewBookId").value;
+    const user = document.getElementById("reviewUser").value;
+    const rating = document.getElementById("reviewRating").value;
+    const comment = document.getElementById("reviewComment").value;
+    
+    try {
+        const response = await fetch("http://127.0.0.1:5000/add_review", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify({ 
+                id: bookId, 
+                user: user, 
+                rating: rating, 
+                comment: comment 
+            }),
+        });
+
+        if (response.ok) {
+            alert("Η κριτική σας προστέθηκε με επιτυχία!");
+            // Κλείνουμε το modal και καθαρίζουμε τη φόρμα
+            document.getElementById("addReviewModal").style.display = "none";
+            document.getElementById("addReviewForm").reset();
+        }
+    } catch (error) {
+        console.error("Σφάλμα:", error);
+        alert("Κάτι πήγε στραβά κατά την υποβολή της κριτικής.");
     }
 }

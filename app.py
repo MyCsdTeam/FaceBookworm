@@ -129,6 +129,38 @@ def get_by_category():
 
     return jsonify(output)
 
+# --- ENDPOINT 5: Ανάκτηση Κριτικών ενός Βιβλίου ---
+@app.route('/get_reviews/<book_id>', methods=['GET'])
+def get_reviews(book_id):
+    # Ψάχνουμε το βιβλίο με βάση το ID του
+    book = mongo.db.books.find_one({"_id": ObjectId(book_id)})
+    
+    # Αν βρεθεί το βιβλίο και έχει το πεδίο reviews, τις επιστρέφουμε
+    if book and "reviews" in book:
+        return jsonify(book["reviews"])
+    return jsonify([]) # Αν δεν έχει, επιστρέφουμε άδεια λίστα
+
+# --- ENDPOINT 6: Προσθήκη Νέας Κριτικής ---
+@app.route('/add_review', methods=['POST'])
+def add_review():
+    data = request.get_json()
+    book_id = data.get('id')
+    
+    # Φτιάχνουμε το αντικείμενο της νέας κριτικής
+    new_review = {
+        "user": data.get('user'),
+        "rating": int(data.get('rating')),
+        "comment": data.get('comment')
+    }
+    
+    # Χρησιμοποιούμε το $push για να βάλουμε τη νέα κριτική στη λίστα (array) reviews της MongoDB
+    mongo.db.books.update_one(
+        {"_id": ObjectId(book_id)},
+        {"$push": {"reviews": new_review}}
+    )
+    
+    return jsonify({"message": "Η κριτική προστέθηκε επιτυχώς!"})    
+
 # 3. Εκκίνηση του Server
 if __name__ == "__main__":
     # Τρέχει υποχρεωτικά στο localhost και στην πόρτα 5000 (απαίτηση εργασίας)
